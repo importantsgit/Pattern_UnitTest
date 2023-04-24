@@ -19,6 +19,12 @@
 		7BEED7FD29F6529C00DE151C /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED7FC29F6529C00DE151C /* ArticleListViewModel.swift */; };
 		7BEED7FF29F6557A00DE151C /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED7FE29F6557A00DE151C /* NewsListTableViewController.swift */; };
 		7BEED80129F6579B00DE151C /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED80029F6579B00DE151C /* ArticleTableViewCell.swift */; };
+		7BEED80829F66B1C00DE151C /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED80729F66B1C00DE151C /* Employee.swift */; };
+		7BEED80B29F66C9300DE151C /* EmpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED80A29F66C9300DE151C /* EmpViewController.swift */; };
+		7BEED80D29F66CBC00DE151C /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED80C29F66CBC00DE151C /* EmployeeViewModel.swift */; };
+		7BEED80F29F66D4200DE151C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED80E29F66D4200DE151C /* APIService.swift */; };
+		7BEED81129F6719300DE151C /* EmpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED81029F6719300DE151C /* EmpTableViewCell.swift */; };
+		7BEED81329F6723600DE151C /* EmployeeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEED81229F6723600DE151C /* EmployeeTableViewDataSource.swift */; };
 		B70EF434F5CC96405AA9FDD5 /* Pods_PatternStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A201E4EB0092C7ED49BDC97 /* Pods_PatternStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +57,12 @@
 		7BEED7FC29F6529C00DE151C /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		7BEED7FE29F6557A00DE151C /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		7BEED80029F6579B00DE151C /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		7BEED80729F66B1C00DE151C /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		7BEED80A29F66C9300DE151C /* EmpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpViewController.swift; sourceTree = "<group>"; };
+		7BEED80C29F66CBC00DE151C /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		7BEED80E29F66D4200DE151C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		7BEED81029F6719300DE151C /* EmpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpTableViewCell.swift; sourceTree = "<group>"; };
+		7BEED81229F6723600DE151C /* EmployeeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +146,8 @@
 		7BEED7F329F649CA00DE151C /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				7BEED80229F6687500DE151C /* project1 */,
+				7BEED80229F6687500DE151C /* Project1 */,
+				7BEED80329F66AD300DE151C /* Project2 */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -172,7 +185,7 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		7BEED80229F6687500DE151C /* project1 */ = {
+		7BEED80229F6687500DE151C /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
 				7BEED7F729F64B5000DE151C /* ViewModels */,
@@ -180,7 +193,52 @@
 				7BEED7F529F649FC00DE151C /* Models */,
 				7BEED7F429F649F200DE151C /* Views */,
 			);
-			path = project1;
+			path = Project1;
+			sourceTree = "<group>";
+		};
+		7BEED80329F66AD300DE151C /* Project2 */ = {
+			isa = PBXGroup;
+			children = (
+				7BEED80929F66C8900DE151C /* View */,
+				7BEED80629F66AFB00DE151C /* APIService */,
+				7BEED80529F66AF400DE151C /* ViewModels */,
+				7BEED80429F66AEE00DE151C /* Models */,
+			);
+			path = Project2;
+			sourceTree = "<group>";
+		};
+		7BEED80429F66AEE00DE151C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7BEED80729F66B1C00DE151C /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BEED80529F66AF400DE151C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7BEED80C29F66CBC00DE151C /* EmployeeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BEED80629F66AFB00DE151C /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				7BEED80E29F66D4200DE151C /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		7BEED80929F66C8900DE151C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BEED80A29F66C9300DE151C /* EmpViewController.swift */,
+				7BEED81029F6719300DE151C /* EmpTableViewCell.swift */,
+				7BEED81229F6723600DE151C /* EmployeeTableViewDataSource.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8345E7B67AFD975BFA675011 /* Pods */ = {
@@ -336,13 +394,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BEED81329F6723600DE151C /* EmployeeTableViewDataSource.swift in Sources */,
+				7BEED80B29F66C9300DE151C /* EmpViewController.swift in Sources */,
 				7BEED7BA29F61F4300DE151C /* TestViewController.swift in Sources */,
+				7BEED80829F66B1C00DE151C /* Employee.swift in Sources */,
+				7BEED81129F6719300DE151C /* EmpTableViewCell.swift in Sources */,
 				7BEED7FF29F6557A00DE151C /* NewsListTableViewController.swift in Sources */,
 				7BEED7FD29F6529C00DE151C /* ArticleListViewModel.swift in Sources */,
 				7BEED7B629F61F4300DE151C /* AppDelegate.swift in Sources */,
 				7BEED80129F6579B00DE151C /* ArticleTableViewCell.swift in Sources */,
 				7BEED7F929F64B8200DE151C /* Article.swift in Sources */,
+				7BEED80D29F66CBC00DE151C /* EmployeeViewModel.swift in Sources */,
 				7BEED7FB29F64BE100DE151C /* WebService.swift in Sources */,
+				7BEED80F29F66D4200DE151C /* APIService.swift in Sources */,
 				7BEED7B829F61F4300DE151C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
